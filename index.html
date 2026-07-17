@@ -1,11 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="fr">
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>AfriTalent — Accueil</title> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+rel="stylesheet"> 
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body> 
+<!-- Navigation Bootstrap commune a toutes les pages --> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+<div class="container"> 
+<a class="navbar-brand" href="index.html"> AfriConnect Summit 2026</a> 
+<button class="navbar-toggler" type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navMenu" 
+aria-controls="navMenu" 
+aria-expanded="false" 
+aria-label="Toggle navigation"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<div class="collapse navbar-collapse" id="navMenu"> 
+<ul class="navbar-nav ms-auto"> 
+<li class="nav-item"><a class="nav-link active" 
+href="index.html">Accueil</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="programme.html">Programme</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="intervenant.html">Intervenants</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="contact.html">Contact</a></li> 
+</ul> 
+</div> 
+</div> 
+</nav> 
+<!-- Contenu principal --> 
+<main>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="wrap hero-content">
+      <p class="eyebrow hero-eyebrow">La marketplace des talents africains</p>
+      <h1>Trouvez le talent africain qu'il vous faut sur internet</h1>
+      <p class="hero-subtitle">AfriConnect Summit, un événement annuel qui réunit développeurs, entrepreneurs et investisseurs du continent.</p>
+      <div class="hero-ctas">
+        <a href="intervenants.html" class="btn btn-primary">
+          <i class="bi bi-search"></i> Découvrir les talents
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES ("Pourquoi nous choisir") ==================== -->
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow center">Nos domaines d'expertise</p>
+      <h2 class="section-title center">Ce que nos talents savent faire</h2>
+
+      <div class="reasons-flex" style="margin-top: 2.5rem;">
+        <article class="reason-card" data-animate="fade-in">
+          <div class="reason-icon"><i class="bi bi-code-slash"></i></div>
+          <h3>Développement Web</h3>
+          <p>Sites vitrine, applications web, e-commerce.</p>
+        </article>
+        <article class="reason-card" data-animate="fade-in">
+          <div class="reason-icon"><i class="bi bi-palette2"></i></div>
+          <h3>Design Graphique</h3>
+          <p>Identité visuelle, UI/UX, illustrations.</p>
+        </article>
+        <article class="reason-card" data-animate="fade-in">
+          <div class="reason-icon"><i class="bi bi-megaphone"></i></div>
+          <h3>Marketing Digital</h3>
+          <p>Réseaux sociaux, SEO, campagnes publicitaires.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STATISTIQUES ==================== -->
+  <section class="stats" id="statistiques" aria-label="AfriTalent en chiffres">
+    <div class="wrap">
+      <p class="eyebrow center">AfriTalent en chiffres</p>
+      <h2 class="section-title center">Une communauté qui grandit chaque mois</h2>
+
+      <div class="stats-grid" style="margin-top: 2.5rem;">
+        <div class="stat-card" data-animate="zoom-in">
+          <p class="stat-number"><span data-counter-target="1200">0</span>+</p>
+          <p class="stat-label">Freelances</p>
+        </div>
+        <div class="stat-card" data-animate="zoom-in">
+          <p class="stat-number"><span data-counter-target="45">0</span></p>
+          <p class="stat-label">Pays représentés</p>
+        </div>
+        <div class="stat-card" data-animate="zoom-in">
+          <p class="stat-number"><span data-counter-target="3800">0</span>+</p>
+          <p class="stat-label">Projets réalisés</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TÉMOIGNAGES ==================== -->
+  <section id="temoignages">
+    <div class="wrap">
+      <p class="eyebrow center">Ils nous font confiance</p>
+      <h2 class="section-title center">Ce que disent nos clients</h2>
+
+      <blockquote class="testimonial-card center" data-animate="fade-in">
+        <p class="testimonial-quote">« AfriTalent m'a permis de trouver un développeur compétent en moins de 48h. »</p>
+        <footer class="testimonial-author">
+          <span class="avatar" aria-hidden="true">AD</span>
+          Aminata Diallo, Directrice Marketing
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+</main>
+<!-- Pied de page --> 
+<footer> 
+<div class="container py-4"> 
+<p>&copy; 2025 AfriTalent. Tous droits reserves.</p> 
+</div> 
+</footer> 
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+></script> 
+<script src="js/main.js"></script>
 </body>
 </html>
