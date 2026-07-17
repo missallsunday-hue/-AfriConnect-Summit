@@ -35,6 +35,141 @@ href="contact.html">Contact</a></li>
 </div> 
 </div> 
 </nav> 
+
+<main>
+
+  <!-- ==================== HERO INTERNE ==================== -->
+  <section id="hero" class="hero-inner">
+    <div class="container">
+      <h1>Le programme du sommet</h1>
+      <p>Trois journées, trois thématiques fortes, un même objectif : passer de l'idée à l'action.</p>
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a><span aria-hidden="true">/</span><span>Programme</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ==================== ONGLETS 3 JOURS ==================== -->
+  <section id="programme-detail">
+    <div class="container">
+      <p class="eyebrow">Planning détaillé</p>
+      <h2 class="mb-5">Sélectionnez un jour</h2>
+
+      <!-- Boutons d'onglets gérés en JavaScript (js/script.js) -->
+      <div class="tabs-bar" role="tablist" aria-label="Jours du sommet">
+        <button class="tab-btn active" data-tab-target="jour1" role="tab" aria-selected="true">Jour 1 · IA &amp; Tech</button>
+        <button class="tab-btn" data-tab-target="jour2" role="tab" aria-selected="false">Jour 2 · Business</button>
+        <button class="tab-btn" data-tab-target="jour3" role="tab" aria-selected="false">Jour 3 · Design &amp; Data</button>
+      </div>
+
+      <!-- JOUR 1 -->
+      <div id="jour1" class="tab-panel active" role="tabpanel">
+        <div class="table-responsive">
+          <table class="schedule-table">
+            <caption>Jour 1 — Mercredi 18 novembre 2026</caption>
+            <thead>
+              <tr><th scope="col">Heure</th><th scope="col">Session</th><th scope="col">Intervenant</th><th scope="col">Salle</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>08h00</td><td>Accueil &amp; remise des badges</td><td>Équipe AfriConnect</td><td>Hall principal</td></tr>
+              <tr><td>09h00</td><td>Cérémonie d'ouverture</td><td>Comité d'organisation</td><td>Grand Amphithéâtre</td></tr>
+              <tr><td>09h45</td><td>Keynote — L'IA au service de la santé africaine</td><td>Amara Ndiaye</td><td>Grand Amphithéâtre</td></tr>
+              <tr><td>11h00</td><td>Table ronde — Souveraineté des données</td><td>Aïcha Diallo</td><td>Salle Kivu</td></tr>
+              <tr><td>14h00</td><td>Atelier — Construire un MVP IA en 3 semaines</td><td>Zainab Bello</td><td>Salle Nyungwe</td></tr>
+              <tr><td>16h00</td><td>Networking café tech</td><td>Libre</td><td>Espace Lounge</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- JOUR 2 -->
+      <div id="jour2" class="tab-panel" role="tabpanel">
+        <div class="table-responsive">
+          <table class="schedule-table">
+            <caption>Jour 2 — Jeudi 19 novembre 2026</caption>
+            <thead>
+              <tr><th scope="col">Heure</th><th scope="col">Session</th><th scope="col">Intervenant</th><th scope="col">Salle</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>09h00</td><td>Keynote — Financer la scale-up africaine</td><td>Kwame Mensah</td><td>Grand Amphithéâtre</td></tr>
+              <tr><td>10h15</td><td>Panel — Capital-risque en Afrique de l'Est</td><td>Samuel Otieno</td><td>Salle Kivu</td></tr>
+              <tr><td>11h30</td><td>Atelier — Un pitch deck qui convainc</td><td>Kwame Mensah</td><td>Salle Nyungwe</td></tr>
+              <tr><td>14h00</td><td>Étude de cas — Fintech &amp; inclusion financière</td><td>Samuel Otieno</td><td>Grand Amphithéâtre</td></tr>
+              <tr><td>15h30</td><td>Speed-networking investisseurs</td><td>Libre</td><td>Espace Lounge</td></tr>
+              <tr><td>17h00</td><td>Session pitch startups</td><td>Comité pitch</td><td>Grand Amphithéâtre</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- JOUR 3 -->
+      <div id="jour3" class="tab-panel" role="tabpanel">
+        <div class="table-responsive">
+          <table class="schedule-table">
+            <caption>Jour 3 — Vendredi 20 novembre 2026</caption>
+            <thead>
+              <tr><th scope="col">Heure</th><th scope="col">Session</th><th scope="col">Intervenant</th><th scope="col">Salle</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>09h00</td><td>Keynote — Design centré utilisateur en contexte africain</td><td>Fatou Cissé</td><td>Grand Amphithéâtre</td></tr>
+              <tr><td>10h15</td><td>Atelier — Prototypage rapide</td><td>Kojo Boateng</td><td>Salle Nyungwe</td></tr>
+              <tr><td>11h30</td><td>Panel — Gouvernance et éthique de la donnée</td><td>Nadia Amrani</td><td>Salle Kivu</td></tr>
+              <tr><td>14h00</td><td>Étude de cas — La donnée au service de l'agriculture</td><td>Thabo Nkosi</td><td>Grand Amphithéâtre</td></tr>
+              <tr><td>15h30</td><td>Table ronde — Design systems mobile-first</td><td>Fatou Cissé &amp; Kojo Boateng</td><td>Salle Kivu</td></tr>
+              <tr><td>16h30</td><td>Cérémonie de clôture</td><td>Comité d'organisation</td><td>Grand Amphithéâtre</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== THÉMATIQUES ==================== -->
+  <section id="thematiques">
+    <div class="container">
+      <p class="eyebrow text-center d-block">Ce qui structure le sommet</p>
+      <h2 class="text-center mb-5">Quatre thématiques</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6" data-animate="fade-in">
+          <div class="reason-card h-100">
+            <div class="reason-icon"><i class="bi bi-cpu"></i></div>
+            <h3>IA &amp; Tech</h3>
+            <p class="mb-0">Applications concrètes de l'intelligence artificielle dans la santé, l'agriculture et l'éducation en Afrique.</p>
+          </div>
+        </div>
+        <div class="col-md-6" data-animate="fade-in">
+          <div class="reason-card h-100">
+            <div class="reason-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h3>Business</h3>
+            <p class="mb-0">Financement, scale-up et stratégies de croissance pour les entreprises technologiques africaines.</p>
+          </div>
+        </div>
+        <div class="col-md-6" data-animate="fade-in">
+          <div class="reason-card h-100">
+            <div class="reason-icon"><i class="bi bi-palette"></i></div>
+            <h3>Design</h3>
+            <p class="mb-0">Conception d'expériences numériques adaptées aux usages et contraintes locales du continent.</p>
+          </div>
+        </div>
+        <div class="col-md-6" data-animate="fade-in">
+          <div class="reason-card h-100">
+            <div class="reason-icon"><i class="bi bi-bar-chart-line"></i></div>
+            <h3>Data</h3>
+            <p class="mb-0">Gouvernance, éthique et valorisation de la donnée comme levier de décision publique et privée.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!-- Pied de page --> 
+<footer> 
+<div class="container py-4"> 
+<p>&copy; 2025 AfriTalent. Tous droits reserves.</p> 
+</div> 
 </footer> 
 <script 
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
