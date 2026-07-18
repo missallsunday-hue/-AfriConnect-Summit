@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <script>document.documentElement.classList.add('js');</script>
 <head> 
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -35,67 +36,188 @@ href="contact.html">Contact</a></li>
 </div> 
 </div> 
 </nav> 
-<!-- Contenu principal --> 
 <main>
 
   <!-- ==================== HERO ==================== -->
-  <section class="hero" id="hero">
-    <div class="wrap hero-content">
-      <p class="eyebrow hero-eyebrow">La marketplace des talents africains</p>
-      <h1>Trouvez le talent africain qu'il vous faut sur internet</h1>
-      <p class="hero-subtitle">AfriConnect Summit, un événement annuel qui réunit développeurs, entrepreneurs et investisseurs du continent.</p>
-      <div class="hero-ctas">
-        <a href="intervenants.html" class="btn btn-primary">
-          <i class="bi bi-search"></i> Découvrir les talents
-        </a>
+  <section id="hero">
+    <div class="container">
+      <p class="eyebrow fade-in-up">Kigali, Rwanda · 18 — 20 novembre 2026</p>
+      <h1 class="fade-in-up">Trouvez le talent africain qu'il vous faut sur internet</h1>
+      <p class="fade-in-up">AfriConnect Summit, un événement annuel qui réunit développeurs, entrepreneurs et investisseurs du continent.</p>
+
+      <div class="d-flex flex-wrap gap-3 fade-in-up">
+        <a href="intervenant.html" class="btn btn-primary btn-lg"><i class="bi bi-search me-1"></i> Découvrir les talents</a>
+        <a href="contact.html" class="btn btn-outline-light btn-lg"><i class="bi bi-pencil-square me-1"></i> S'inscrire maintenant</a>
+      </div>
+
+      <!-- Compte à rebours temps réel (géré par js/script.js) -->
+      <div class="countdown fade-in-up" aria-live="polite">
+        <div class="countdown-unit">
+          <span class="countdown-value" id="cd-days">00</span>
+          <span class="countdown-label">Jours</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="cd-hours">00</span>
+          <span class="countdown-label">Heures</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="cd-minutes">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="cd-seconds">00</span>
+          <span class="countdown-label">Secondes</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== SERVICES ("Pourquoi nous choisir") ==================== -->
+  <!-- ==================== CHIFFRES CLÉS ==================== -->
+  <section id="statistiques" aria-label="Chiffres clés de l'édition 2026">
+    <div class="container">
+      <p class="eyebrow text-center d-block">AfriConnect Summit en chiffres</p>
+      <h2 class="text-center mb-5">Une édition à la hauteur du continent</h2>
+
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="stat-card" data-animate="zoom-in">
+            <p class="stat-number"><span data-counter-target="1200">0</span>+</p>
+            <p class="stat-label">Participants attendus</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card" data-animate="zoom-in">
+            <p class="stat-number"><span data-counter-target="48">0</span></p>
+            <p class="stat-label">Intervenants</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card" data-animate="zoom-in">
+            <p class="stat-number"><span data-counter-target="3">0</span></p>
+            <p class="stat-label">Jours de sommet</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card" data-animate="zoom-in">
+            <p class="stat-number"><span data-counter-target="12">0</span></p>
+            <p class="stat-label">Pays représentés</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== POURQUOI PARTICIPER ==================== -->
   <section id="services">
-    <div class="wrap">
-      <p class="eyebrow center">Nos domaines d'expertise</p>
-      <h2 class="section-title center">Ce que nos talents savent faire</h2>
+    <div class="container">
+      <p class="eyebrow text-center d-block">Pourquoi participer</p>
+      <h2 class="text-center mb-5">Trois raisons de réserver votre place</h2>
 
-      <div class="reasons-flex" style="margin-top: 2.5rem;">
-        <article class="reason-card" data-animate="fade-in">
-          <div class="reason-icon"><i class="bi bi-code-slash"></i></div>
-          <h3>Développement Web</h3>
-          <p>Sites vitrine, applications web, e-commerce.</p>
-        </article>
-        <article class="reason-card" data-animate="fade-in">
-          <div class="reason-icon"><i class="bi bi-palette2"></i></div>
-          <h3>Design Graphique</h3>
-          <p>Identité visuelle, UI/UX, illustrations.</p>
-        </article>
-        <article class="reason-card" data-animate="fade-in">
-          <div class="reason-icon"><i class="bi bi-megaphone"></i></div>
-          <h3>Marketing Digital</h3>
-          <p>Réseaux sociaux, SEO, campagnes publicitaires.</p>
-        </article>
+      <div class="row">
+        <div class="col-md-4" data-animate="fade-in">
+          <div class="reason-icon"><i class="bi bi-diagram-3"></i></div>
+          <h3>Un réseau continental</h3>
+          <p class="mb-0">Rencontrez des porteurs de projets et décideurs venus de 12 pays africains, dans un format pensé pour les vraies mises en relation.</p>
+        </div>
+        <div class="col-md-4" data-animate="fade-in">
+          <div class="reason-icon"><i class="bi bi-lightbulb"></i></div>
+          <h3>Des contenus concrets</h3>
+          <p class="mb-0">IA appliquée, financement, design produit, gouvernance de la donnée : des sessions pensées pour repartir avec des outils utilisables.</p>
+        </div>
+        <div class="col-md-4" data-animate="fade-in">
+          <div class="reason-icon"><i class="bi bi-rocket-takeoff"></i></div>
+          <h3>Une visibilité réelle</h3>
+          <p class="mb-0">Espace startups, sessions de pitch et présence médiatique pour donner à vos projets la lumière qu'ils méritent.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== STATISTIQUES ==================== -->
-  <section class="stats" id="statistiques" aria-label="AfriTalent en chiffres">
-    <div class="wrap">
-      <p class="eyebrow center">AfriTalent en chiffres</p>
-      <h2 class="section-title center">Une communauté qui grandit chaque mois</h2>
+  <!-- ==================== INTERVENANTS VEDETTES ==================== -->
+  <section id="intervenants-vedettes">
+    <div class="container">
+      <p class="eyebrow text-center d-block">Ils montent sur scène</p>
+      <h2 class="text-center mb-5">Intervenants vedettes</h2>
 
-      <div class="stats-grid" style="margin-top: 2.5rem;">
-        <div class="stat-card" data-animate="zoom-in">
-          <p class="stat-number"><span data-counter-target="1200">0</span>+</p>
-          <p class="stat-label">Freelances</p>
+      <div class="row g-4">
+        <div class="col-6 col-lg-3">
+          <article class="speaker-card" data-animate="fade-in">
+             <img class="speaker-photo" src="../Khady_Sylla_AfriConnect-Summit/images/imageH1.jpg" alt="Portrait d'Amara Ndiaye, fondatrice d'IA Santé Afrique">
+            <div class="speaker-body">
+              <h3 class="speaker-name">Amara Ndiaye</h3>
+              <p class="speaker-role">Fondatrice, IA Santé Afrique</p>
+              <p class="speaker-country"><i class="bi bi-geo-alt"></i> Sénégal</p>
+            </div>
+          </article>
         </div>
-        <div class="stat-card" data-animate="zoom-in">
-          <p class="stat-number"><span data-counter-target="45">0</span></p>
-          <p class="stat-label">Pays représentés</p>
+        <div class="col-6 col-lg-3">
+          <article class="speaker-card" data-animate="fade-in">
+            <img class="speaker-photo" src="../Khady_Sylla_AfriConnect-Summit/images/imageH2.jpg" alt="Portrait de Kwame Mensah, directeur innovation chez Fintech Horizon">
+            <div class="speaker-body">
+              <h3 class="speaker-name">Kwame Mensah</h3>
+              <p class="speaker-role">Directeur Innovation, Fintech Horizon</p>
+              <p class="speaker-country"><i class="bi bi-geo-alt"></i> Ghana</p>
+            </div>
+          </article>
         </div>
-        <div class="stat-card" data-animate="zoom-in">
-          <p class="stat-number"><span data-counter-target="3800">0</span>+</p>
-          <p class="stat-label">Projets réalisés</p>
+        <div class="col-6 col-lg-3">
+          <article class="speaker-card" data-animate="fade-in">
+            <img class="speaker-photo" src="../Khady_Sylla_AfriConnect-Summit/images/imageH3.jpg" alt="Portrait de Fatou Cissé, directrice design chez Studio Baobab">
+            <div class="speaker-body">
+              <h3 class="speaker-name">Fatou Cissé</h3>
+              <p class="speaker-role">Directrice Design, Studio Baobab</p>
+              <p class="speaker-country"><i class="bi bi-geo-alt"></i> Sénégal</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="speaker-card" data-animate="fade-in">
+            <img class="speaker-photo" src="../Khady_Sylla_AfriConnect-Summit/images/imageH4.jpg" alt="Portrait de Thabo Nkosi, CEO de Data Insights Group">
+            <div class="speaker-body">
+              <h3 class="speaker-name">Thabo Nkosi</h3>
+              <p class="speaker-role">CEO, Data Insights Group</p>
+              <p class="speaker-country"><i class="bi bi-geo-alt"></i> Afrique du Sud</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="intervenant.html" class="btn btn-gold"><i class="bi bi-people me-1"></i> Voir tous les intervenants</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SPONSORS ==================== -->
+  <section id="sponsors">
+    <div class="container">
+      <p class="eyebrow text-center d-block">Ils rendent le sommet possible</p>
+      <h2 class="text-center mb-5">Nos sponsors</h2>
+
+      <div data-animate="zoom-in">
+        <p class="tier-label">Sponsors Or</p>
+        <div class="sponsor-tier tier-gold">
+          <div class="sponsor-badge">BaobabPay</div>
+          <div class="sponsor-badge">Sankara Telecom</div>
+        </div>
+      </div>
+
+      <div data-animate="zoom-in">
+        <p class="tier-label">Sponsors Argent</p>
+        <div class="sponsor-tier tier-silver">
+          <div class="sponsor-badge">NileWorks</div>
+          <div class="sponsor-badge">Kora Cloud</div>
+          <div class="sponsor-badge">EastCap</div>
+        </div>
+      </div>
+
+      <div data-animate="zoom-in">
+        <p class="tier-label">Sponsors Bronze</p>
+        <div class="sponsor-tier tier-bronze">
+          <div class="sponsor-badge">Zuri Media</div>
+          <div class="sponsor-badge">Teranga Labs</div>
+          <div class="sponsor-badge">PixelSavanna</div>
+          <div class="sponsor-badge">Waza Fintech</div>
         </div>
       </div>
     </div>
@@ -103,12 +225,12 @@ href="contact.html">Contact</a></li>
 
   <!-- ==================== TÉMOIGNAGES ==================== -->
   <section id="temoignages">
-    <div class="wrap">
-      <p class="eyebrow center">Ils nous font confiance</p>
-      <h2 class="section-title center">Ce que disent nos clients</h2>
+    <div class="container">
+      <p class="eyebrow text-center d-block">Ils y étaient</p>
+      <h2 class="text-center">Ce que disent nos participants</h2>
 
-      <blockquote class="testimonial-card center" data-animate="fade-in">
-        <p class="testimonial-quote">« AfriTalent m'a permis de trouver un développeur compétent en moins de 48h. »</p>
+      <blockquote class="testimonial-card text-center" data-animate="fade-in">
+        <p class="testimonial-quote">« AfriConnect Summit m'a permis de trouver un développeur compétent en moins de 48h. »</p>
         <footer class="testimonial-author">
           <span class="avatar" aria-hidden="true">AD</span>
           Aminata Diallo, Directrice Marketing
