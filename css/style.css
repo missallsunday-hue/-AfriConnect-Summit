@@ -1,25 +1,4 @@
-/* ══════════════════════════════════════════════════════════════════════
-   AFRICONNECT SUMMIT — STYLE CUSTOM (par-dessus Bootstrap 5)
-   Palette reprise d'AfriTalent : terracotta / or / charcoal
-   Sommaire :
-   1. Import Google Fonts
-   2. Variables CSS (:root)
-   3. Reset & typographie de base
-   4. Boutons (surcharge Bootstrap .btn-primary / .btn-outline-light)
-   5. Navbar
-   6. Hero + compte à rebours
-   7. Chiffres clés (stats)
-   8. Pourquoi participer (cartes sur grille Bootstrap)
-   9. Intervenants (vedettes, grille complète, filtres)
-   10. Sponsors (tailles différenciées par niveau)
-   11. Programme (onglets + tableau)
-   12. Témoignages
-   13. Contact (formulaire + validation + FAQ accordéon CSS pur)
-   14. Footer + bouton retour en haut
-   15. Animations au scroll
-   16. Responsive (complète les breakpoints Bootstrap)
-   ══════════════════════════════════════════════════════════════════════ */
-
+  
 /* ═══ 1. IMPORT GOOGLE FONTS ═══ */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Fraunces:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
